@@ -39,4 +39,14 @@ document.getElementById('userValue').innerHTML = "you are on" + planetName + " "
 
 }
 
+function reverseString(str) {
+    return str.split('' '').reverse().join('');
+}
+var astro= reverseString('Astro Weight Calculator');
+document.getElementById ('reverse').innerHTML = astro;
+
+
+
+
+
 
