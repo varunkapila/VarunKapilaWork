@@ -1,5 +1,5 @@
-var select = document.getElementById("planet_value");
-var planets = [
+var select = document.getElementById("planet_value"); //select menu assigns each selection a value in the array
+var planets = [     //planet value, name array
 
   {planet: 'Sun', gravity: 27.9},
   {planet: 'Mercury', gravity: 0.377},
@@ -14,9 +14,15 @@ var planets = [
   {planet: 'Pluto', gravity: 0.06}
 ];
 
-for(var i = 0; i < planets.length; i++){
-  var opt = planets[i];
-  var el= document.createElement("option");
+//----------------------------------------------------------> jquery
+//$(".option")addclass("planetvalue")
+
+//----------
+
+
+for(var i = 0; i < planets.length; i++){ //
+  var opt = planets[i]; //variable for the option menu with i as planet value
+  var el= document.createElement("option"); //var element for the option 
   el.value=planets[i].gravity;
   el.innerHTML = planets[i].planet;
 select.appendChild(el);
@@ -36,14 +42,14 @@ Math.round(totalWeight);
 
 document.getElementById('userValue').innerHTML = "you are on" + planetName + " " + totalWeight;  
 
-
 }
 
 function reverseString(str) {
-    return str.split('' '').reverse().join('');
+    return str.split('').reverse().join('');
 }
 var astro= reverseString('Astro Weight Calculator');
 document.getElementById ('reverse').innerHTML = astro;
+
 
 
 
